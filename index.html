@@ -421,10 +421,10 @@
                                         <h3 class="text-center"><span style="font-weight:bold">Day 3</span></h3>
                                         <div title="Absolute Reference: JST (UTC +9) Wed, 3 Nov 2023 09:00~12:00"> <span class="text-primary" id="tz21">JST (UTC +9)</span> <span id="st_day21">5 July 09:00</span> ~ <span id="ed_day21">12:00</span></div>
                                     </th>
-                                    <th class="border">
+<!--                                     <th class="border">
                                         <h3 class="text-center"><span style="font-weight:bold">Day 4</span></h3>
                                         <div title="Absolute Reference: JST (UTC +9) Wed, 3 Nov 2023 13:00~17:00"> <span class="text-primary" id="tz22">JST (UTC +9)</span> <span id="st_day22">5 July 2023 13:00</span> ~ 17:00</div>
-                                    </th>
+                                    </th> -->
                                 </tr>
                             </thead>
                             <tbody>
@@ -670,14 +670,14 @@
         $('#ed_day12').html(ed_day12)
 
         //JST (UTC +9)  Wed, 3 Nov 2021 21:00 ~ 23:00
-        var st_day21 = moment.utc('2023-07-05T21:00:00+09:00').local().format('ddd, D MMM, YYYY HH:mm');
-        var ed_day21 = moment.utc('2023-07-05T23:00:00+09:00').local().format('HH:mm');
+        var st_day21 = moment.utc('2023-07-05T09:00:00+09:00').local().format('ddd, D MMM, YYYY HH:mm');
+        var ed_day21 = moment.utc('2023-07-05T17:00:00+09:00').local().format('HH:mm');
         $('#st_day21').html(st_day21)
         $('#ed_day21').html(ed_day21)
 
-        //JST (UTC +9)  Wed, 3 Nov 2021 23:00 ~
-        var st_day22 = moment.utc('2023-07-06T09:00:00+09:00').local().format('ddd, D MMM, YYYY HH:mm');
-        $('#st_day22').html(st_day22)
+        // //JST (UTC +9)  Wed, 3 Nov 2021 23:00 ~
+        // var st_day22 = moment.utc('2023-07-06T09:00:00+09:00').local().format('ddd, D MMM, YYYY HH:mm');
+        // $('#st_day22').html(st_day22)
 
         // $('.popover-dismiss').popover({
         //    trigger: 'focus'
