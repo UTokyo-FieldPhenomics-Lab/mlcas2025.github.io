@@ -30,7 +30,7 @@
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
-    <script type="text/javascript" src="proceeding_db.js?rnd=234"></script>
+    <!-- <script type="text/javascript" src="proceeding_db.js?rnd=234"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -53,6 +53,19 @@
             max-width: 100%; 
         }
     </style>
+
+    <script type="text/javascript">
+        function copyPaymentURL() {
+        // Get the text field
+        var copyText = "https://credit.j-payment.co.jp/link/creditcard?aid=125038&iid=MLCAS002&mailauthckey=1ffd24835d8d44809be1832273020974&lang=en";
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText);
+
+        // Alert the copied text
+        alert("The payment URL has been copied to your clipboard. Due to security reasons, please manually paste the URL in a new browser tab.\n支払いURLがあなたのクリップボードにコピーされました。セキュリティ上の理由から、URLを手動で新しいブラウザタブに貼り付けてください。");
+        }
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -106,7 +119,11 @@
                         <h3 class="h1-large">Fifth International Workshop on Machine Learning for Cyber-Agricultural
                             Systems <br>(MLCAS2023)</h3>
                         <a class="btn-solid-lg page-scroll" href="https://forms.gle/CM497FP3jGVY2JRb8" target="_blank">Pre-Registration</a>
-                        <br><br><a class="btn-solid-lg page-scroll" href="https://credit.j-payment.co.jp/link/creditcard?aid=125038&iid=MLCAS002&mailauthckey=1ffd24835d8d44809be1832273020974&lang=en" target="_blank">Payment</a>
+                        <br>
+                        <br>
+                        <!-- <a class="btn-solid-lg" href="https://credit.j-payment.co.jp/link/creditcard/?aid=125038&iid=MLCAS002&mailauthckey=1ffd24835d8d44809be1832273020974&lang=en" target="_blank">Payment</a> -->
+                        <!-- <a class="btn-solid-lg page-scroll" href="https://www.bilibili.com/video/BV1ak4y1L7jA/?spm_id_from=trigger_reload&vd_source=09e402b45777a82cf3ee71f23249a7f6" target="_blank">BiliTest</a> -->
+                        <div class="btn-solid-lg page-scroll" type="button" onclick="copyPaymentURL();">Payment</div>
                         <h5 class="text-warning mt-3">Please use a credit card that supports 3D Secure<br>Onsite Participation fee (JPY10,000)</h5>
                         <!--<p class="btn-outline-lg page-scroll"><i class="fab fa-chrome"></i>  Chrome Recommended</p>-->
                     </div> <!-- end of text-container -->
@@ -652,7 +669,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/scripts.js"></script>
 
     <script type="text/javascript">
         $('#bologna-list a').on('click', function (e) {
