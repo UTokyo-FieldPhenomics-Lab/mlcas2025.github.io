@@ -67,11 +67,6 @@
             text-decoration: underline;
         }
 
-        /* 可选：为点击状态添加不同样式 */
-        .popover-name-link.popover-clicked {
-            text-decoration: underline;
-            font-weight: bold;
-        }
     </style>
 </head>
 
@@ -560,9 +555,13 @@
 
     <div class="ex-basic-1 pt-5 pb-5">
         <div id="program" class="container">
+
             <div class="row">
-                <h2 class="h2-heading text-center">Program</h2>
-            </div>
+                <div class="col-lg-12">
+                    <h2 class="h2-heading text-center">Program</h2>
+                    <p class="text-center">Click to swtich days</p>
+                </div> 
+            </div> 
 
             <!-- 标签页导航部分 (Bootstrap 4.6.0 兼容) -->
             <ul class="nav justify-content-center mb-3" id="conferenceTabs" role="tablist">
@@ -589,7 +588,7 @@
                         <thead class="thead-light">
                             <tr>
                                 <th class="border" style="width: 10%; text-align: center;">
-                                    <h5><span style="font-weight:bold">Time (JST)</span></h5>
+                                    <h5><span style="font-weight:bold">Time(JST)</span></h5>
                                 </th>
                                 <th class="border" style="width: 20%; text-align: center;">
                                     <h5><span style="font-weight:bold">Chair</span></h5>
@@ -839,7 +838,7 @@
                         <thead class="thead-light">
                             <tr>
                                 <th class="border" style="width: 10%; text-align: center;">
-                                    <h5><span style="font-weight:bold">Time (JST)</span></h5>
+                                    <h5><span style="font-weight:bold">Time(JST)</span></h5>
                                 </th>
                                 <th class="border" style="width: 20%; text-align: center;">
                                     <h5><span style="font-weight:bold">Chair</span></h5>
@@ -1035,12 +1034,13 @@
 
     <div class="ex-basic-1 pt-5 pb-5">
         <div id="competition" class="container">
+
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="h2-heading text-center">Competition</h2>
-
                 </div> 
             </div> 
+
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <h5 class="mt-4">Topic</h5> 
@@ -1203,7 +1203,7 @@ Any and all prize(s) is(are) non transferable. All taxes, fees, and expenses ass
 
     <script type="text/javascript">
         // 转换所有.popover-name元素为popover链接
-        $('.popover-name').each(function() {
+        $('.popover-name-institude').each(function() {
             const $this = $(this);
             const name = $this.text();
             const content = $this.data('content');
@@ -1220,6 +1220,9 @@ Any and all prize(s) is(are) non transferable. All taxes, fees, and expenses ass
         $(function () {
             $('[data-toggle="popover"]').popover()
         })
+
+        let currentPopover = null;
+
         function showBootstrapPopover(element) {
             if (currentPopover && currentPopover !== element) {
                 $(currentPopover).popover('hide');
