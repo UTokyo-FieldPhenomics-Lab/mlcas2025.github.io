@@ -39,18 +39,38 @@
 
     <!-- popover -->
     <style>
-        .popover{
-            max-width: 40%; /* Max Width of the popover (depending on the container!) */
+        .popover {
+            max-width: 40%;
+            /* Max Width of the popover (depending on the container!) */
         }
+
         @media only screen and (max-width: 768px) {
-            .popover{
-                max-width: 80%; /* Max Width of the popover (depending on the container!) */
+            .popover {
+                max-width: 80%;
+                /* Max Width of the popover (depending on the container!) */
             }
         }
 
         img {
-            max-height: 100%; 
-            max-width: 100%; 
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .popover-name-link {
+            color: inherit;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: text-decoration 0.2s ease;
+        }
+
+        .popover-name-link:hover {
+            text-decoration: underline;
+        }
+
+        /* 可选：为点击状态添加不同样式 */
+        .popover-name-link.popover-clicked {
+            text-decoration: underline;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -190,70 +210,36 @@
                     <table class="table table-hover">
                         <caption>Note:</caption>
                         <thead>
-                          <tr>
-                            <th scope="col">Category </th>
-                            <th scope="col">Before August 1</th>
-                            <th scope="col">After August 1 (onside payment only)</th>
-                          </tr>
+                            <tr>
+                                <th scope="col">Category </th>
+                                <th scope="col">Before August 1</th>
+                                <th scope="col">After August 1 (onside payment only)</th>
+                            </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <th scope="row">Industry Professional</th>
-                            <td>¥15,000</td>
-                            <td>¥20,000</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Academia/Non-Profit/Start-Up </th>
-                            <td>¥10,000</td>
-                            <td>¥15,000</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Students</th>
-                            <td>¥3,000</td>
-                            <td>¥5,000</td>
-                          </tr>
+                            <tr>
+                                <th scope="row">Industry Professional</th>
+                                <td>¥15,000</td>
+                                <td>¥20,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Academia/Non-Profit/Start-Up </th>
+                                <td>¥10,000</td>
+                                <td>¥15,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Students</th>
+                                <td>¥3,000</td>
+                                <td>¥5,000</td>
+                            </tr>
                         </tbody>
-                      </table>
+                    </table>
 
                 </div>
 
-<!--                 <div class="col-xl-10 offset-xl-1 d-flex flex-column">             
-                    <div>
-                        <h5 class="text-center text-warning mt-3">Gold Sponsors</h5>
-                            <div class="icons-container">
-                            <div class="d-flex justify-content-center">
-                                <img src="images/jd_logo.png" alt="John Deere Logo" height="100px" class="m-2" onclick="javascript:window.open('https://www.deere.com/en/', '_blank');">
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <img src="images/bayer_logo.svg" alt="Bayer Logo" height="100px" class="m-2" onclick="javascript:window.open('https://www.bayer.com/en/', '_blank');">
-                            </div>
-                            <div class="d-flex justify-content-center" style="margin-top: 20px;">
-                                <img src="images/isu_psi.png" alt="Iowa State University Plant Sciences Institute Logo" height="100px" class="m-2" onclick="javascript:window.open('https://www.psi.iastate.edu/', '_blank');">
-                            </div>
-                        </div> 
-                    </div>
-
-                
-                    
-                    <div>
-                        <h5 class="text-center text-muted mt-3"> Silver Sponsors </h5>
-                        <div class="icons-container text-center">
-                            <img src="images/corteva_logo.png" alt="Corteva logo" height="90hv"  class="m-2" onclick="javascript:window.open('https://www.corteva.com/', '_blank');">                      
-                            <!-- <img src="images/plantphenomics.png" alt="Plant Phenomics logo" height="90hv"  class="m-2" onclick="javascript:window.open('https://spj.science.org/journal/plantphenomics/', '_blank');">                       
-                         </div> 
-                     </div>
-
-                     <div>
-                        <h5 class="text-center text-muted mt-3"> Bronze sponsors </h5>
-                        <div class="icons-container text-center">
-                            <!-- <img src="images/quantomics.png" alt="Quantomics Logo" height="90hv"  class="m-2" onclick="javascript:window.open('https://quantomics.co.jp/', '_blank');">                       
-                         </div> 
-                     </div>
-                 </div> -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of basic -->
+            </div>
+        </div>
+    </div>
 
     <div class="ex-basic-1 pt-5 pb-5">
         <div id="callforpapers" class="container">
@@ -345,52 +331,36 @@
                     <ul class="list-unstyled li-space-lg mt-3">
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><strong>Soumik Sarkar</strong>, Professor, Mechanical
-                                Engineering, Iowa State University</div>
+                            <div class="media-body"><strong>Soumik Sarkar</strong>, Professor, Mechanical Engineering, Iowa State University</div>
                         </li>
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><strong>Arti Singh</strong>, Associate Professor, Department of
-                                Agronomy, Iowa State University</div>
+                            <div class="media-body"><strong>Arti Singh</strong>, Associate Professor, Department of Agronomy, Iowa State University</div>
                         </li>
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><strong>Wei Guo</strong>, Associate Professor, Field
-                                Phenomics Laboratory, Graduate School of Agriculture and Life Sciences, The University 
-                                of Tokyo</div>
+                            <div class="media-body"><strong>Wei Guo</strong>, Associate Professor, Field Phenomics Laboratory, Graduate School of Agriculture and Life Sciences, The University of Tokyo</div>
                         </li>
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><strong>Ian Stavness</strong>, Professor, Department of Computer Science,
-                                the University of Saskatchewan</div>
+                            <div class="media-body"><strong>Ian Stavness</strong>, Professor, Department of Computer Science, the University of Saskatchewan</div>
                         </li>
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><strong>Baskar Ganapathysubramanian</strong>, Professor, Mechanical
-                                Engineering, Iowa State University</div>
+                            <div class="media-body"><strong>Baskar Ganapathysubramanian</strong>, Professor, Mechanical Engineering, Iowa State University</div>
                         </li>
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><strong>Asheesh K. Singh</strong>, Professor, Department of
-                                Agronomy, Iowa State University</div>
-<!--                         </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><strong>James C. Schnable</strong>, Professor, Department of 
-                                Agronomy and Horticulture, University of Nebraska-Lincoln</div>
-                        </li> -->
-                        <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><strong>Masayuki Hirafuji</strong>, Project Professor, Field
-                                Phenomics Laboratory, Graduate School of Agriculture and Life Sciences, The University
-                                of Tokyo</div>
+                            <div class="media-body"><strong>Asheesh K. Singh</strong>, Professor, Department of Agronomy, Iowa State University</div>
                         </li>
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><strong>Seishi Ninomiya</strong>, Project Professor, Field Phenomics
-                                Laboratory, Graduate School of Agriculture and Life Sciences, The University of Tokyo
+                            <div class="media-body"><strong>Masayuki Hirafuji</strong>, Project Professor, Field Phenomics Laboratory, Graduate School of Agriculture and Life Sciences, The University of Tokyo</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Seishi Ninomiya</strong>, Project Professor, Field Phenomics Laboratory, Graduate School of Agriculture and Life Sciences, The University of Tokyo
                             </div>
-                        </li>
                         </li>
                     </ul>
 
@@ -402,7 +372,6 @@
 
                 <div class="col-lg-12 mt-4">
                     <h4 class="mt-4 text-center text-muted">Invited Speakers</h4>
-<!--                     <h6 class="text-center">Click button to see details, click again to hide</h6> -->
                 </div>
 
                 <div class="col mt-4">
@@ -413,17 +382,8 @@
                                 <div class="text">
                                     <div class="testimonial-author">Dr. Hiroyoshi Iwata</div>
                                     <div class="occupation">Professor, Graduate School of Agricultural and Life Sciences<br> University of Tokyo</div>
-<!--                                     <a role="button" class="btn btn-outline-info btn-sm" style="text-decoration: none;" data-toggle="popover" data-placement="bottom" title="Biography" data-content="Director, Machine Learning and Sensing Lab
-
-                                    Professor, Electrical & Computer Engineering
-                                    
-                                    Associate Dean for Research and Facilities, Herbert Wertheim College of Engineering
-                                    
-                                    University of Florida. 
-                                    ">Bio</a> -->
                                 </div>
                             </div>
-                            <!-- <p class="testimonial-text">Title: Advanced Application Technologies to Boost Big Data Utilization for Multiple-Field Scientific Discovery and Social Problem Solving</p> -->
                         </div>
                     </div>
                 </div>
@@ -435,19 +395,9 @@
                                 <img src="images/kou.jpg" alt="alternative" height="80px">
                                 <div class="text">
                                     <div class="testimonial-author">Dr. Yan-Fu Kou</div>
-                                    <div class="occupation">Professor, Department of Biomechatronics Engineering,
-                                        <br> National Taiwan University</div>
-<!--                                     <a role="button" class="btn btn-outline-info btn-sm" style="text-decoration: none;" data-toggle="popover" data-placement="bottom" title="Biography" data-content="Dorothy Foehr Huck and J. Lloyd Huck Chair in Global Food Security
-                                    
-                                    Two labs are headed by David Hughes at Penn State
-
-                                    One is on ant behavior and specifically how parasites both adaptively manipulate ant behavior and avoid behavioral defense mechanisms (retired my work on ant behavior to focus 100% on Global Food secruity through PlantVillage )
-                                    
-                                    The other is on food security and leveraging advances in technology for smallholder farmers around the world https://plantvillage.psu.edu/. 
-                                    ">Bio</a> -->
+                                    <div class="occupation">Professor, Department of Biomechatronics Engineering<br> National Taiwan University</div>
                                 </div>
                             </div>
-                            <!-- <p class="testimonial-text">Title: Advanced Application Technologies to Boost Big Data Utilization for Multiple-Field Scientific Discovery and Social Problem Solving</p> -->
                         </div>
                     </div>
                 </div>
@@ -460,23 +410,8 @@
                                 <div class="text">
                                     <div class="testimonial-author">Dr. Haiyan Cen</div>
                                     <div class="occupation">Professor, College of Biosystems Engineering and Food Science <br> Zhejiang University</div>
-<!--                                     <a role="button" class="btn btn-outline-info btn-sm" style="text-decoration: none;" data-toggle="popover" data-placement="bottom" title="Biography" data-content="Position: Professor, Lab of Horticultural Science, 
-                                    Lab of Horticultural Science, 
-                                    Graduate School of Agricultural and Life Sciences, The University of Tokyo
-                                    
-                                    Education/work：
-                                    1989-1993：Okayama University
-                                    1993-1995：Graduate School of Okayama University (Master Course)
-                                    1995-2007 : NARO, Hokkaido Agric Res Cent, Forage Breeding
-                                    2003： Visiting Scientist, Agronomy, Iowa State University, Forage molecular Breeding 
-                                    2006：　Dr. Degree, Kagoshima Federal Universities, Forage molecular Breeding
-                                    2007-2024: Senior Scientist and Lab Head, Kazusa DNA Res Inst, Plant genome sequencing, molecular breeding, DB construction and digital phenotyping
-                                    2019-current: Chair of Japan Plant Phenotyping Network (JPPN)
-                                    2024 July-: Current position 
-                                    ">Bio</a> -->
                                 </div>
                             </div>
-                            <!-- <p class="testimonial-text">Title: Advanced Application Technologies to Boost Big Data Utilization for Multiple-Field Scientific Discovery and Social Problem Solving</p> -->
                         </div>
                     </div>
                 </div>
@@ -489,14 +424,12 @@
                                 <div class="text">
                                     <div class="testimonial-author">Dr. Alexander Bucksch </div>
                                     <div class="occupation">Associate Professor, College of Agriculture, Life and Environmental Sciences <br> The University of Arizona </div>
-<!--                                     <a role="button" class="btn btn-outline-info btn-sm" style="text-decoration: none;" data-toggle="popover" data-placement="bottom" title="Biography" data-content="Chief Technology Officer Netherlands Plant Eco-phenotyping Centre, Wageningen University & Research in The Netherlands.">
-                                    Bio</a> -->
+                                    
                                 </div>
                             </div>
-                            <!-- <p class="testimonial-text">Title: Learning to lead the target: plant breeding in an unpredictable world</p> -->
                         </div>
                     </div>
-                </div> <!-- end of col -->
+                </div>
 
                 <div class="col mt-4">
                     <div class="card bg-gray">
@@ -506,11 +439,8 @@
                                 <div class="text">
                                     <div class="testimonial-author">Dr. Shouyang Liu</div>
                                     <div class="occupation"> Professor, Academy for Advanced Interdisciplinary Studies <br> Nanjing Agricultural University</div>
-<!--                                     <a role="button" class="btn btn-outline-info btn-sm" style="text-decoration: none;" data-toggle="popover" data-placement="bottom" title="Biography" data-content="Prof. Girish Krishnan is an Associate Professor in the Industrial and Enterprise Systems Engineering with joint appointments in Mechanical Engineering and Carle Illinois College of Medicine, University of Illinois at Urbana-Champaign. He obtained a PhD degree from University of Michigan. His research is in the intersection of engineering design and robotics, with applications in agricultural robots, surgical simulators, exoskeletons and orthotics and telehealth robotics. Prof. Krishnan is the recipient of the 2015 NSF Early Career award (CAREER), 2016 UIUC council award for excellence in advising and 2017 Freudestein Young Investigator award (ASME). He has published around 32 peer-reviewed journals, 45 conference proceedings, and holds two patents.">
-                                    Bio</a>-->
                                 </div> 
                             </div>
-                            <!-- <p class="testimonial-text">Title: Long-term Policy of Japan toward Sustainable and Productive Agriculture with Smart Farming</p> -->
                         </div>
                     </div>
                 </div>
@@ -522,25 +452,20 @@
                                 <img src="images/Do-Soon.jpg" alt="alternative" height="80px">
                                 <div class="text">
                                     <div class="testimonial-author">Dr.Do-Soon Kim</div>
-                                    <div class="occupation"> Professor, Dept of Agriculture, Forestry & Bioresources <br>Seoul National University</div>
-<!--                                     <a role="button" class="btn btn-outline-info btn-sm" style="text-decoration: none;" data-toggle="popover" data-placement="bottom" title="Biography" data-content="https://shakoorlab.org/">
-                                    Bio</a> -->
-                                </div> 
+                                    <div class="occupation">Professor, Dept of Agriculture, Forestry & Bioresources <br> Seoul National University</div>
+                                </div>
                             </div>
-                            <!-- <p class="testimonial-text">Title: Learning to lead the target: plant breeding in an unpredictable world</p> -->
                         </div>
                     </div>
-                </div> <!-- end of col -->
+                </div>
 
-            </div> <!-- end of row -->
-
+            </div>
 
 
             <div class="row">
 
                 <div class="col-lg-12 mt-4">
                     <h4 class="mt-4 text-center text-muted">Panelists</h4>
-                    <!-- <h6 class="text-center">Click button to see details, click again to hide</h6> -->
                 </div>
 
                 <div class="col mt-4">
@@ -551,12 +476,12 @@
                                 <div class="text">
                                     <div class="testimonial-author">Dr. Isobe Sachiko</div>
                                     <div class="occupation">The University of Tokyo</div>
-                                    <!-- <a role="button" class="btn btn-outline-info btn-sm" style="text-decoration: none;" data-toggle="popover" data-placement="bottom" title="Biography" data-content="Head of Data Science, John Deere.">Bio</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
+
 
                 <div class="col mt-4">
                     <div class="card bg-gray">
@@ -565,13 +490,13 @@
                                 <img src="images/ding_yanfeng.png" alt="alternative" height="80px">
                                 <div class="text">
                                     <div class="testimonial-author">Dr. Yanfeng Ding</div>
-                                    <div class="occupation">Nanjing agricultural university </div>
-                                    <!-- <a role="button" class="btn btn-outline-info btn-sm" style="text-decoration: none;" data-toggle="popover" data-placement="bottom" title="Biography" data-content="Head of Data Science, John Deere.">Bio</a> -->
+                                    <div class="occupation">Nanjing agricultural university</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
+
 
                 <div class="col mt-4">
                     <div class="card bg-gray">
@@ -581,12 +506,11 @@
                                 <div class="text">
                                     <div class="testimonial-author">Dr. Arti Singh</div>
                                     <div class="occupation">Iowa State University</div>
-                                    <!-- <a role="button" class="btn btn-outline-info btn-sm" style="text-decoration: none;" data-toggle="popover" data-placement="bottom" title="Biography" data-content="Head of Data Science, John Deere.">Bio</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
 
                 <div class="col mt-4">
                     <div class="card bg-gray">
@@ -596,12 +520,11 @@
                                 <div class="text">
                                     <div class="testimonial-author">Dr. Fumio Okura</div>
                                     <div class="occupation">Osaka University</div>
-                                    <!-- <a role="button" class="btn btn-outline-info btn-sm" style="text-decoration: none;" data-toggle="popover" data-placement="bottom" title="Biography" data-content="Head of Data Science, John Deere.">Bio</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
 
                 <div class="col mt-4">
                     <div class="card bg-gray">
@@ -611,12 +534,11 @@
                                 <div class="text">
                                     <div class="testimonial-author">Dr. Yuan-Kai Tu</div>
                                     <div class="occupation">Taiwan Agricultural Research Institute</div>
-                                    <!-- <a role="button" class="btn btn-outline-info btn-sm" style="text-decoration: none;" data-toggle="popover" data-placement="bottom" title="Biography" data-content="Head of Data Science, John Deere.">Bio</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
 
                 <div class="col mt-4">
                     <div class="card bg-gray">
@@ -626,244 +548,491 @@
                                 <div class="text">
                                     <div class="testimonial-author">Dr. Hyoung Seok Kim</div>
                                     <div class="occupation">Korea Institute of Science & Technology</div>
-                                    <!-- <a role="button" class="btn btn-outline-info btn-sm" style="text-decoration: none;" data-toggle="popover" data-placement="bottom" title="Biography" data-content="Head of Data Science, John Deere.">Bio</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
 
-
-
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+            </div>
+        </div>
     </div>
 
     <div class="ex-basic-1 pt-5 pb-5">
         <div id="program" class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading text-center">Program(TBD)</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row pt-5">
-                <div class="col-lg-12">
-                    <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th class="border" style="width: 20%; text-align: center;">
-                                        <h5><span style="font-weight:bold">Time <br /> (JST)</span></h5>
-                                    </th>
-                                    <th class="border" style="width: 20%; text-align: center;">
-                                        <h5><span style="font-weight:bold">Session Chair</span></h5>
-                                    </th>
-                                    <th class="border" style="width: 60%; text-align: center;">
-                                        <h5><span style="font-weight:bold">Activity</span></h5>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>8:30 - 9:00 AM</strong></td>
-<!--                                     <td rowspan="1"><strong>Dr. Wei GUO </strong></td> -->
-                                    <td><strong>Dr. Wei GUO </strong></td>
-                                    <td>Coffee and Welcome Address<br />
-                                        
-                                    </td>
-                                </tr>
-                                <tr>
-<!--                                     <td><strong>9:00 - 9:45 AM</strong></td>
-                                    <td rowspan="3" style="text-align: center;"><strong>Dr. Arti Singh</strong></td>
-                                    <td><strong>Keynote</strong>: xxx<br />
-                                        <strong>Dr. xxx</strong> - University of Florida
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>9:45 - 10:15 AM</strong></td>
-                                    <td><strong>Invited Talk 1</strong> <br />
-                                        <strong>Dr.xxx</strong> - Wageningen University & Research, The Netherlands
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>10:15 - 10:30 AM</strong></td>
-                                    <td>Break</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>10:30 - 11:00 AM</strong></td>
-                                    <td rowspan="3" style="text-align: center;"><strong>Dr. Wei Guo</strong></td>
-                                    <td><strong>Invited Talk 2</strong>: DIY Plant Phenotyping: Application of digital phenotyping techniques in plant research and breeding<br />
-                                        <strong>Dr. xxx</strong> - The University of Tokyo, Japan
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>11:00 - 11:30 AM</strong></td>
-                                    <td><strong>Invited Talk 3</strong>: Navigation and Manipulation Challenges in Urban High Tunnels<br />
-                                        <strong>xxx</strong> - University of Illinois
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>11:30 AM - 12:15 PM</strong></td>
-                                    <td>Flash Talks (12)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>12:15 - 12:45 PM</strong></td>
-                                    <td rowspan="1"></td>
-                                    <td>Lunch</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>12:45 - 1:15 PM</strong></td>
-                                    <td rowspan="2" style="text-align: center;"><strong>Dr. Baskar Ganapathysubramanian</strong></td>
-                                    <td><strong>Lunch Plenary</strong>: (Really) Open AI for food security: Lessons for Lincoln from Lincoln<br />
-                                        <strong>Dr. David P. Hughes</strong> - The Pennsylvania State University
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>1:15 - 1:45 PM</strong></td>
-                                    <td><strong>Invited Talk 4</strong>: Advancing Crop Improvement From the Ground Up with ML-Driven Analysis of Root Systems and Soil Properties<br />
-                                        <strong>Dr. Nadia Shakoor</strong> - Donald Danforth Plant Science Center
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>1:45 - 3:00 PM</strong></td>
-                                    <td rowspan="1" style="text-align: center;"><strong>Dr. Soumik Sarkar</strong></td>
-                                    <td><strong>Panel Discussion</strong>: Translating AI-Ag Research into Practice<br />
-                                        <strong>Dr. Ryan Kirk</strong> - Head of Data Science, John Deere<br />
-                                        <strong>Siddarth Tata</strong> - Product Leader for Amazon Fresh Supply Chain (Grocery Program) and Amazon Kisan (Farmer Engagement Program)<br />
-                                        <strong>Meaghan Anderson</strong> - Field Agronomist in Central Iowa and Extension Field Specialist at Iowa State University Extension and Outreach<br />
-                                        <strong>Dr. Matthew Carroll</strong> - Analytics & Insights Lead, Iowa Soybean Association<br />
-                                        <strong>Dr. Pieter Blok</strong> - Assistant Professor, Lab of Field Phenomics, The University of Tokyo, Japan
-                                    </td>
-                                </tr>
-                                <tr> -->
-                                    <td><strong>3:00 - 3:15 PM</strong></td>
-                                    <td rowspan="1"></td>
-                                    <td>Break</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>3:15 - 3:45 PM</strong></td>
-                                    <td rowspan="1" style="text-align: center;"><strong>Dr. Ian Stavness</strong></td>
-                                    <td>Competition Presentations and Award Ceremony</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>3:45 - 5:00 PM</strong></td>
-                                    <td rowspan="1"></td>
-                                    <td>Poster Session, Networking and Sponsor Booths</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        
-                        <!-- <table class="table table-bordered">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th class="border" style="width: 25%; text-align: center;">
-                                        <h5><span style="font-weight:bold">Time (Central Time)</span></h5>
-                                    </th>
-                                    <th class="border" style="width: 75%; text-align: center;">
-                                        <h5><span style="font-weight:bold">Activity</span></h5>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>8:30 - 9:00 AM</strong></td>
-                                    <td>Breakfast and Welcome Address<br />
-                                        <strong>Dr. Soumik Sarkar</strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>9:00 - 9:45 AM</strong></td>
-                                    <td><strong>Keynote</strong>: The Strength to Say “I Don't Know”: expanding neural networks to address out of distribution samples and ambiguous inputs<br />
-                                    <strong>Dr. Alina Zare</strong> - University of Florida
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>9:45 - 10:15 AM</strong></td>
-                                    <td><strong>Invited Talk 1</strong> <br />
-                                    <strong>Dr. Rick van de Zedde</strong> - Wageningen University & Research, The Netherlands
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>10:15 - 10:30 AM</strong></td>
-                                    <td>Break</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>10:30 - 11:00 AM</strong></td>
-                                    <td><strong>Invited Talk 2</strong>: DIY Plant Phenotyping: Application of digital phenotyping techniques in plant research and breeding<br />
-                                    <strong>Dr. Sachiko Isobe</strong> - The University of Tokyo, Japan
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>11:00 - 11:30 AM</strong></td>
-                                    <td><strong>Invited Talk 3</strong>: Navigation and Manipulation Challenges in Urban High Tunnels<br />
-                                        <strong>Girish Krishnan</strong> - University of Illinois
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>11:30 AM - 12:15 PM</strong></td>
-                                    <td>Flash Talks (12)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>12:15 - 12:45 PM</strong></td>
-                                    <td>Lunch</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>12:45 - 1:15 PM</strong></td>
-                                    <td><strong>Lunch Plenary</strong>: (Really)Open AI for food security: Lessons for Lincoln from Lincoln<br />
-                                    <strong>David P. Hughes</strong> - The Pennsylvania State University
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>1:15 - 1:45 PM</strong></td>
-                                    <td><strong>Invited Talk 4</strong>: Advancing Crop Improvement From the Ground Up with ML-Driven Analysis of Root Systems and Soil Properties<br />
-                                        <strong> Nadia Shakoor</strong> - Donald Danforth Plant Science Center
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>1:45 - 3:00 PM</strong></td>
-                                    <td><strong>Panel Discussion</strong>: Translating AI-Ag Research into Practice<br />
-                                        <strong>Dr. Ryan Kirk</strong> - Head of Data Science, John Deere<br />
-                                        <strong>Siddarth Tata</strong> - Product Leader for Amazon Fresh Supply Chain (Grocery Program) and Amazon Kisan (Farmer Engagement Program)<br />
-                                        <strong>Meaghan Anderson</strong> - Field Agronomist in Central Iowa and Extension Field Specialist at Iowa State University Extension and Outreach<br />
-                                        <strong>Dr. Matthew Carroll</strong> - Analytics & Insights Lead, Iowa Soybean Association<br />
-                                        <strong>Dr. Pieter Blok</strong> - Assistant Professor, Lab of Field Phenomics, The University of Tokyo, Japan
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>3:00 - 3:15 PM</strong></td>
-                                    <td>Break</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>3:15 - 3:45 PM</strong></td>
-                                    <td>Competition Presentations and Award Ceremony</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>3:45 - 5:00 PM</strong></td>
-                                    <td>Poster Session, Networking and Sponsor Booths</td>
-                                </tr>
-                            </tbody>
-                        </table> -->
-                    </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+                <h2 class="h2-heading text-center">Program</h2>
+            </div>
+
+            <!-- 标签页导航部分 (Bootstrap 4.6.0 兼容) -->
+            <ul class="nav justify-content-center mb-3" id="conferenceTabs" role="tablist">
+                <li class="nav-item text-center">
+                    <a class="nav-link active nav-tab" id="day1-tab" data-toggle="tab" href="#day1" role="tab" aria-controls="day1" aria-selected="true">
+                        <b>Day 1</b><br/>
+                        JST (UTC +9) 5 August 2025 09:00 ~ 17:00
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link nav-tab" id="day2-tab" data-toggle="tab" href="#day2" role="tab" aria-controls="day2" aria-selected="false">
+                        <b>Day 2</b><br/>
+                        JST (UTC +9) 6 August 2025 09:00 ~ 17:00
+                    </a>
+                </li>
+            </ul>
+
+            <!-- 标签页内容部分 (Bootstrap 4.6.0 兼容) -->
+            <div class="tab-content" id="conferenceTabContent">
+
+                <!-- Day 1 Schedule -->
+                <div class="tab-pane fade show active text-center" id="day1" role="tabpanel" aria-labelledby="day1-tab">
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th class="border" style="width: 10%; text-align: center;">
+                                    <h5><span style="font-weight:bold">Time (JST)</span></h5>
+                                </th>
+                                <th class="border" style="width: 20%; text-align: center;">
+                                    <h5><span style="font-weight:bold">Chair</span></h5>
+                                </th>
+                                <th class="border" style="width: 50%; text-align: center;">
+                                    <h5><span style="font-weight:bold">Title</span></h5>
+                                </th>
+                                <th class="border" style="width: 20%; text-align: center;">
+                                    <h5><span style="font-weight:bold">Presenter</span></h5>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border">09:00~09:20</td>
+                                <td class="border">Dr. Wei GUO</td>
+                                <td class="border">Opening remarks and Introduction</td>
+                                <td class="border">Dr. Masayuki Hirafuji</td>
+                            </tr>
+                            <tr>
+                                <td class="border">09:20~09:30</td>
+                                <td class="border"></td>
+                                <td class="border">Welcome message</td>
+                                <td class="border">Dr. Soumik Sarkar</td>
+                            </tr>
+                            <tr>
+                                <td class="border">09:30~10:00</td>
+                                <td class="border">Dr. Arti Singh</td>
+                                <td class="border"><b>Invited Talk 1</b></td>
+                                <td class="border">Dr. Alexander Bucksch</td>
+                            </tr>
+                            <tr>
+                                <td class="border">10:00~10:30</td>
+                                <td class="border"></td>
+                                <td class="border"><b>Invited Talk 2</b></td>
+                                <td class="border">Dr. Haiyan Cen</td>
+                            </tr>
+                            <tr>
+                                <td class="border">10:30~11:00</td>
+                                <td class="border"></td>
+                                <td class="border text-info">Coffee break</td>
+                                <td class="border"></td>
+                            </tr>
+                            <tr>
+                                <td class="border">11:00~11:15</td>
+                                <td class="border">Dr. Ian Stavness</td>
+                                <td class="border">Digital Transformation of the Forestry Industry in
+                                    Japan</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Graduate School of Agricultural and Life Sciences, The University of Tokyo">
+                                        James Burridge
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">11:15~11:30</td>
+                                <td class="border"></td>
+                                <td class="border">Artificial Intelligence Organ-Level Identification of Greenhouse-Growth <i>Cucumis melo</i> using Visible images and Near-infrared Hyperspectral Images</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Crop Genetic Resources and Biotechnology Division, Taiwan Agricultural Research Institute">
+                                        Yuan-Kai Tu
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">11:30~11:45</td>
+                                <td class="border"></td>
+                                <td class="border">An unsupervised 3D point cloud segmentation method and tool for artificial objects and trees in dense orchards</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Graduate School of Agricultural and Life Sciences, The University of Tokyo">
+                                        Tianhai Wang
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">11:45~12:00</td>
+                                <td class="border"></td>
+                                <td class="border">Soybean Yield Prediction with Bidirectional Linear Unit for Recurrence</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Department of Mechanical Engineering, Iowa State University">
+                                        Qisai Liu
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">12:00~13:00</td>
+                                <td class="border"></td>
+                                <td class="border text-info">Lunch break</td>
+                                <td class="border"></td>
+                            </tr>
+                            <tr>
+                                <td class="border">13:00~13:30</td>
+                                <td class="border">Dr. Asheesh K. Singh</td>
+                                <td class="border"><b>Invited Talk 3</b></td>
+                                <td class="border">Dr. Hiroyoshi Iwata</td>
+                            </tr>
+                            <tr>
+                                <td class="border">13:30~14:00</td>
+                                <td class="border"></td>
+                                <td class="border"><b>Invited Talk 4</b></td>
+                                <td class="border">Dr. Yan-Fu Kou</td>
+                            </tr>
+                            <tr>
+                                <td class="border">14:00~14:15</td>
+                                <td class="border"></td>
+                                <td class="border">WeedNet: A Foundation Model-Based Global-to-Local AI Approach for Real-Time Weed Species Identification and Classification</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Department of Agronomy, Iowa State University">
+                                        Ashlyn Rairdin
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">14:15~14:30</td>
+                                <td class="border"></td>
+                                <td class="border">Camera Align and Folder Drag are All You Need: Rapid Crop Lodging Aerial Assessment without Segmentation</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Graduate School of Agricultural and Life Sciences, The University of Tokyo">
+                                        Haozhou Wang
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">14:30~14:50</td>
+                                <td class="border"></td>
+                                <td class="border text-info">Coffee break</td>
+                                <td class="border"></td>
+                            </tr>
+                            <tr>
+                                <td class="border">14:50~15:05</td>
+                                <td class="border">Dr. Masayuki Hirafuji</td>
+                                <td class="border">Physically Consistent Hyperspectral NeRF for 3D Plant Phenotyping using a Hyperspectral Camera</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Department of Electrical and Computer Engineering, Iowa State University">
+                                        Kibon Ku
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">15:05~15:20</td>
+                                <td class="border"></td>
+                                <td class="border">Assessment of UAV-Based Methods for Accurate Canopy Coverage Estimation in Rice Breeding Environment</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Graduate School of Agricultural and Life Sciences, The University of Tokyo">
+                                        Tatsuya Asai
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">15:20~15:35</td>
+                                <td class="border"></td>
+                                <td class="border">Towards Large Reasoning Models for Agriculture</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Department of Mechanical Engineering, Iowa State University">
+                                        Elizabeth Tranel & Ashlyn Rairdin
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">15:35~15:50</td>
+                                <td class="border"></td>
+                                <td class="border">AgroBench: Vision-Language Model Benchmark in Agriculture</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Graduate School of Information Science and Technology, The University of Osaka">
+                                        Risa Shinoda
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">15:50~16:05</td>
+                                <td class="border"></td>
+                                <td class="border">AgAdvisor: Agentic AI for agricultural query resolution</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Translational AI Center, Iowa State University">
+                                        Joshua R. Waite
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">16:05~16:20</td>
+                                <td class="border"></td>
+                                <td class="border">Phylogenetic and Structural Modeling for Optimization of Agricultural Production</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Department of Computer Science, Institute of Mathematics and Computer Sciences, University of São Paulo at São Carlos">
+                                        José L. J. Ruelas
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">16:20~16:35</td>
+                                <td class="border"></td>
+                                <td class="border">Fine-Tuning and Deploying Vision-Language-Action Models for Visual Servoing with Soft Continuum Arms</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Iowa State University">
+                                        Hsin-Jung Yang
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">16:35~16:50</td>
+                                <td class="border"></td>
+                                <td class="border">AI-based Soil Monitoring and Crop Disease Detection System</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Faculty of Computing, Sri Lanka Institute of Information Technology">
+                                        Wijethunge N. R.
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">16:50~17:05</td>
+                                <td class="border"></td>
+                                <td class="border">Mechanics-Informed Phenotyping of Maize Stalks Using Octree-Based Elastic Simulations</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Department of Mechanical Engineering, Iowa State University">
+                                        Samundra Karki
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">17:30~19:30</td>
+                                <td class="border"></td>
+                                <td class="border text-info">Banquet at UTokyo Yayoi Campus</td>
+                                <td class="border"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 第二天的内容 -->
+                <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="day2-tab">
+                    <table class="table table-bordered" style="text-align: center;">
+                        <thead class="thead-light">
+                            <tr>
+                                <th class="border" style="width: 10%; text-align: center;">
+                                    <h5><span style="font-weight:bold">Time (JST)</span></h5>
+                                </th>
+                                <th class="border" style="width: 20%; text-align: center;">
+                                    <h5><span style="font-weight:bold">Chair</span></h5>
+                                </th>
+                                <th class="border" style="width: 50%; text-align: center;">
+                                    <h5><span style="font-weight:bold">Title</span></h5>
+                                </th>
+                                <th class="border" style="width: 20%; text-align: center;">
+                                    <h5><span style="font-weight:bold">Presenter</span></h5>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border">09:00~09:30</td>
+                                <td class="border">Dr. Baskar Ganapathysubramanian</td>
+                                <td class="border"><b>Invited Talk 5</b></td>
+                                <td class="border">Dr. Shouyang Liu</td>
+                            </tr>
+                            <tr>
+                                <td class="border">09:30~10:00</td>
+                                <td class="border"></td>
+                                <td class="border"><b>Invited Talk 6</b></td>
+                                <td class="border">Dr. Do-Soon Kim</td>
+                            </tr>
+                            <tr>
+                                <td class="border">10:00~10:30</td>
+                                <td class="border"></td>
+                                <td class="border text-info">Coffee break</td>
+                                <td class="border"></td>
+                            </tr>
+                            <tr>
+                                <td class="border">10:30~12:00</td>
+                                <td class="border">Dr. Sachiko Isobe & Dr. Alexander Bucksch</td>
+                                <td class="border">Panel Discussion: The Science of Phenomics</td>
+                                <td class="border">
+                                    Dr. Arti Singh,<br>Dr. Yanfeng Ding,<br>Dr. YuanKai Tu,<br>Dr. Hyoung Seok Kim,<br/>Dr. Fumio Okura
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">12:00~13:00</td>
+                                <td class="border"></td>
+                                <td class="border text-info">Lunch break</td>
+                                <td class="border"></td>
+                            </tr>
+                            <tr>
+                                <td class="border">13:00~14:00</td>
+                                <td class="border">Dr. Ian Stavness</td>
+                                <td class="border">Competition Presentations and Award Ceremony</td>
+                                <td class="border">Dr. Zijian Wang</td>
+                            </tr>
+                            <tr>
+                                <td class="border">14:00~14:15</td>
+                                <td class="border"></td>
+                                <td class="border">Find the Fruit: Designing a Zero-Shot Sim2Real Deep RL Planner for Occlusion Aware Plant Manipulation</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Department of Mechanical Engineering, Iowa State University">
+                                        Nitesh Subedi
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">14:15~14:35</td>
+                                <td class="border"></td>
+                                <td class="border text-info">Coffee break</td>
+                                <td class="border"></td>
+                            </tr>
+                            <tr>
+                                <td class="border">14:35~14:50</td>
+                                <td class="border">Dr. Seishi Ninomiya</td>
+                                <td class="border">GaussianPlant: Structure-aligned Gaussian Splatting for 3D Reconstruction of Plants</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Graduate School of Information Science and Technology, The University of Osaka">
+                                        Fumio Okura & Yang Yang
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">14:50~15:05</td>
+                                <td class="border"></td>
+                                <td class="border">Near-field abiotic stress tolerance system for crop stress induction, phenotyping, and breeding applications</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Department of Agronomy, Iowa State University">
+                                        Heidi M. Dornath
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">15:05~15:20</td>
+                                <td class="border"></td>
+                                <td class="border">Plant stem skeletonization with Gaussian splat guided contraction</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Computer Science, University of Saskatchewan">
+                                        Andrew Morton
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">15:20~15:35</td>
+                                <td class="border"></td>
+                                <td class="border">PlantPose: Plant Skeleton Estimation in 2D and 3D</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Graduate School of Information Science and Technology, The University of Osaka">
+                                        Xinpeng Liu
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">15:35~15:50</td>
+                                <td class="border"></td>
+                                <td class="border">Sewing the future of cotton: a multi-omics study combining nanomechanics, transcriptomics, and phenotypic traits</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Department of Electrical and Computer Engineering, Iowa State University">
+                                        Anwesha Sarkar
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">15:50~16:05</td>
+                                <td class="border"></td>
+                                <td class="border">Phenotyping pipeline utilizing DeeplabV3+ for cyber physical systems: A case study of potato crops</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Probabilistic Model Unit, AI Research Promotion Office, Research Centre for Agricultural Information, National Agriculture and Food Research Organization, NARO">
+                                        Stephen Njehia Njane
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">16:05~16:20</td>
+                                <td class="border">Dr. Wei Guo</td>
+                                <td class="border">Imputing Spatio-Temporal Gaps in Sentinel-1/2 Imagery with MODIS-Conditioned Deep Models for Downstream Ag Management and Yield Prediction</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Department of Computer Engineering, Iowa State University">
+                                        Bitgoeul Kim
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">16:20~16:35</td>
+                                <td class="border"></td>
+                                <td class="border">NeuraLeaf: Neural Parametric Leaf Models with Shape and Deformation Disentanglement</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Graduate School of Information Science and Technology, The University of Osaka">
+                                        Yang Yang & Fumio Okura
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">16:35~16:50</td>
+                                <td class="border"></td>
+                                <td class="border">Immersive Virtual Reality (VR) Visualization of 3D Models of Millet Plants Reconstructed using Neural Radiance Fields (NeRFs)</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Department of Mechanical Engineering, Iowa
+                                    State University">
+                                        Shambhavi Joshi
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">16:50~17:05</td>
+                                <td class="border"></td>
+                                <td class="border">Open-World Plant Disease and Species Detection: Prototype Networks and Visual-Language Models for Novel Class Discovery</td>
+                                <td class="border">
+                                    <span class="popover-name-institude"
+                                        data-content="Department of Electronics Engineering, Jeonbuk National University">
+                                        Alvaro Fuentes
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border">17:05~17:15</td>
+                                <td class="border">Dr. Wei Guo</td>
+                                <td class="border text-info">ENDING</td>
+                                <td class="border">Dr. Soumik Sarkar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div> <!-- end of container -->
     </div>
-    
 
-    <!-- <div class="ex-basic-1 bg-gray pt-5 pb-5">
-        <div class="container" id="proceedings">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading text-center">Proceedings</h2>
-                    <h6 class="text-center text-muted">Coming soon</h6>
-                    <h6 class="text-center text-muted">Time zone: <span id="proceed_tz"></span></h6>
-                </div> 
-
-            </div> 
-        </div> 
-    </div> -->
-
-    
     <div class="ex-basic-1 pt-5 pb-5">
         <div id="competition" class="container">
             <div class="row">
@@ -1033,9 +1202,63 @@ Any and all prize(s) is(are) non transferable. All taxes, fees, and expenses ass
     </script>
 
     <script type="text/javascript">
+        // 转换所有.popover-name元素为popover链接
+        $('.popover-name').each(function() {
+            const $this = $(this);
+            const name = $this.text();
+            const content = $this.data('content');
+
+            $this.replaceWith(`
+                <a class="popover-name-link" tabindex="0" role="button" data-toggle="popover" data-trigger="manual"
+                data-content="${content}" data-placement="top"
+                onmouseenter="showBootstrapPopover(this)"
+                onmouseleave="hideBootstrapPopover(this)"
+                onclick="toggleBootstrapPopover(event, this)">${name}</a>
+                `);
+        });
+
         $(function () {
             $('[data-toggle="popover"]').popover()
         })
+        function showBootstrapPopover(element) {
+            if (currentPopover && currentPopover !== element) {
+                $(currentPopover).popover('hide');
+            }
+            $(element).popover('show');
+            currentPopover = element;
+        }
+
+        function hideBootstrapPopover(element) {
+            // 如果不是点击触发的，才隐藏
+            if (!$(element).hasClass('popover-clicked')) {
+                $(element).popover('hide');
+                if (currentPopover === element) {
+                    currentPopover = null;
+                }
+            }
+        }
+
+        function toggleBootstrapPopover(event, element) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            $(element).toggleClass('popover-clicked');
+            if ($(element).hasClass('popover-clicked')) {
+                showBootstrapPopover(element);
+            } else {
+                hideBootstrapPopover(element);
+            }
+        }
+
+        // 点击页面其他地方关闭popover
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('[data-toggle="popover"]').length &&
+                !$(e.target).is('[data-toggle="popover"]')) {
+                $('[data-toggle="popover"]').popover('hide');
+                $('[data-toggle="popover"]').removeClass('popover-clicked');
+                currentPopover = null;
+            }
+        });
     </script>
 
     <script>
